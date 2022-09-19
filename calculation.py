@@ -8,7 +8,7 @@ def cal_circle_area(r):
 
 if __name__ == '__main__':
     f = int(input("choose function: \n\
-        0. cal_rectangle_perimeter  2. cal_rectangle_area \nPlease enter an integer:"))
+        0. cal_rectangle_perimeter  1. cal_circle_area \nPlease enter an integer:"))
 
     if f == 0:
         a = int(input("Input value a: "))
