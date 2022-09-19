@@ -4,11 +4,11 @@ def cal_rectangle_perimeter(a, b):
     return 2*(a + b)
 
 def cal_circle_area(r):
-    return math.pi * pow(r, 2)
+    return math.pi*pow(r, 2)
 
 if __name__ == '__main__':
     f = int(input("choose function: \n\
-        0. cal_rectangle_perimeter  1. cal_circle_area \nPlease enter an integer:"))
+        0. calculate_rectangle_perimeter  1. calculate_circle_area \nPlease enter an integer:"))
 
     if f == 0:
         a = int(input("Input value a: "))
