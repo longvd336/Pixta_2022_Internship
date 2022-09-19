@@ -3,6 +3,8 @@ import math
 def cal_rectangle_perimeter(a, b):
     return 2*(a + b)
 
+def cal_circle_area(r):
+    return math.pi * pow(r, 2)
 
 if __name__ == '__main__':
     f = int(input("choose function: \n\
@@ -12,7 +14,9 @@ if __name__ == '__main__':
         a = int(input("Input value a: "))
         b = int(input("Input value b: "))
         result = cal_rectangle_perimeter(a, b)
-
+    elif f == 1:
+        r = int(input("Input value r: "))
+        result = cal_circle_area(r)
     else:
         result = "Wrong input"
     print(f"\nResult: {result}")
