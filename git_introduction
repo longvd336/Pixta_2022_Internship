@@ -1,0 +1,54 @@
+ * Git intro
+ 
+ => Storage, tracking, manage
+ => 
+ Init -> initial
+ Pull -> approve
+ Add feature 
+ 
+ resolve conflict
+ merge rebase
+ 
+ Git: 
+ => Git add: add all modified files to the staging (temporary)
+ => Git push:
+ => Git fetch 
+ 
+ ## Normal gitflow
+ => When add new feature -> pull code, fetch, create and checkout to your working branch
+ => after that modify, add your code, .... then push to the remote repo and create pull request.
+ 
+ ## Pervent conflict
+ => while working in a new feature or sth new, if one person push code and code have merged to main branch. So you need pull code by 'git pull' command to get up to date code. Then push the new code to reviewer.
+ 
+ => Note: when you have changed the code before you pull the code => so you need a method to save the changed (note: git add can not be use here because it only temporary saving before commit). 
+ 
+ => New method: git stash save "name of warehouse you want to save"
+ -> then pull code
+ -> switch to the branch with feature that you working on
+ -> merge this branch with main brnach (to update this branch up to date with main branch)
+ 
+-> merge current code with the code that you saved in the "warehouse" before
+
+list all stash and apply: 
+# git stash list
+# git stash apply stash@{}
+
+## Resolve conflict:
+
+=> when 2 person workin in the same coding bloc/ location => one push => one pull and merge => conflict
+
+## Git rebase:
+-> Solve conflict
+-> git add (revised files)
+-> git rebase --continue
+
+(get all modified and overwrite to current file)
+
+// Diff btw git merge: git merge is modify to solve coflict then merge 2 conflict together
+
+
+
+
+ 
+ 
