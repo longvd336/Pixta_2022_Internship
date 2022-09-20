@@ -11,9 +11,11 @@ def cal_rectangle_area(a, b):
 
 if __name__ == '__main__':
     f = int(input("choose function: \n\
-        0. calculate_rectangle_perimeter  1. calculate_circle_area 2. cal_rectangle_area \nPlease enter an integer:" \nPlease enter an integer:"))
-
+        0. cal_rectangle_perimeter \n\
+        1. cal_circle_area \n\
+        2. cal_rectangle_area \nPlease enter an integer:"))
     mult = int(input("Add multiplier:"))
+    sub = int(input("Add substraction:"))
     add = int(input("add addition:"))
     if f == 0:
         a = int(input("Input value a: "))
@@ -28,4 +30,5 @@ if __name__ == '__main__':
         result = cal_rectangle_area(a, b)
     else:
         result = "Wrong input"
-    print(f"\nResult: {result * mult + add}")
+    print(f"\nResult: {result * mult - sub + add")
+
